@@ -70,6 +70,13 @@ body, p {
 	text-align: center;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .li-space-lg li {
 	margin-bottom: 0.375rem;
 }
