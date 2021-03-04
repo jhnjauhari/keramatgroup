@@ -641,6 +641,136 @@ input[type='checkbox'] {
 /**************************/
 /*     03. Navigation     */
 /**************************/
+
+.navbar-solid {
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
+	background-color: #113448;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
+	transition: all 0.2s;
+}
+
+.navbar-solid .navbar-brand {
+	font-size: 0;
+}
+
+.navbar-solid .navbar-brand.logo-image img {
+    width: 7.0625rem;
+	height: 2rem;
+	-webkit-backface-visibility: hidden;
+}
+
+.navbar-solid .navbar-brand.logo-text {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	font: 700 2.25rem/1.5rem "Montserrat", sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-solid .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-solid .nav-item .nav-link {
+	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar-solid .nav-item .nav-link:hover,
+.navbar-solid .nav-item .nav-link.active {
+	color: #FF3F39;
+}
+
+/* Dropdown Menu */
+.navbar-solid .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-solid .dropdown-toggle:focus { /* removes dropdown outline on focus  */
+	outline: 0;
+}
+
+.navbar-solid .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #113448;
+}
+
+.navbar-solid .dropdown-item {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-solid .dropdown-item:hover {
+	background-color: #113448;
+}
+
+.navbar-solid .dropdown-item .item-text {
+	font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
+}
+
+.navbar-solid .dropdown-item:hover .item-text {
+	color: #FF3F39;
+}
+
+.navbar-solid .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.75rem auto;
+	border: none;
+	background-color: #b5bcc4;
+	opacity: 0.2;
+}
+/* end of dropdown menu */
+
+.navbar-solid .social-icons {
+	display: none;
+}
+
+.navbar-solid .navbar-toggler {
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+}
+
+.navbar-solid button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-solid button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-solid button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-solid button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+
+/* end of solid navbar*/
+
+
 .navbar-custom {
 	padding-top: 0.375rem;
 	padding-bottom: 0.375rem;
@@ -1491,7 +1621,7 @@ input[type='checkbox'] {
 /*     14. Team     */
 /********************/
 .basic-2 {
-	padding-top: 6.375rem;
+	padding-top: 10.375rem;
 	padding-bottom: 3.375rem;
 	background-color: #fbfbfb;
 	text-align: center;
@@ -1853,6 +1983,71 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 	/* end of general styles */
+
+
+	.navbar-solid {
+		padding: 0.375rem 1.5rem 0.375rem 2rem;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+        background-color: #113448;
+	}
+
+	.navbar-solid .navbar-brand.logo-text {
+		color: #fff;
+	}
+
+	.navbar-solid .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-solid .nav-item .nav-link {
+		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+	}
+	
+	.navbar-solid .nav-item .nav-link:hover,
+	.navbar-solid .nav-item .nav-link.active {
+		color: #FF3F39;
+	}
+
+	.navbar-solid.top-nav-collapse {
+        padding: 0.375rem 1.5rem 0.375rem 2rem;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+		background-color: #113448;
+	}
+
+	.navbar-solid.top-nav-collapse .navbar-brand.logo-text {
+		color: #fff;
+	}
+
+	.navbar-solid.top-nav-collapse .nav-item .nav-link {
+		color: #fff;
+	}
+	
+	.navbar-solid.top-nav-collapse .nav-item .nav-link:hover,
+	.navbar-solid.top-nav-collapse .nav-item .nav-link.active {
+		color: #FF3F39;
+	}
+
+	.navbar-solid .dropdown-menu {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-top: 0.75rem solid rgba(0, 0, 0, 0);
+		border-radius: 0.25rem;
+		box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.03);
+	}
+	
+	.navbar-solid.top-nav-collapse .dropdown-menu {
+		border-top: 0.125rem solid rgba(0, 0, 0, 0);
+	}
+
+	.navbar-solid .dropdown-item {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+
+	.navbar-solid .dropdown-items-divide-hr {
+		width: 84%;
+	}
 
 
 	/* Navigation */
