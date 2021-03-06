@@ -85,6 +85,10 @@ body, p {
 	padding-left: 1.25rem;
 }
 
+.headerlogo {
+	padding-bottom: 2rem;
+}
+
 h1 {
 	color: #484a46;
 	font: 700 2.5rem/3rem "Montserrat", sans-serif;
@@ -909,18 +913,24 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-background.png') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 8), rgba(0, 0, 0, 0.5)), url('../images/header-background.png') center center no-repeat;
 	background-size: cover;
+	height: 100%;
 }
 
 .header .header-content {
 	padding-top: 8rem;
 	padding-bottom: 2.125rem;
 	text-align: center;
+	width: 100%;
+	height: 100%;
+	max-height: 70px;
 }
 
 .header .text-container {
 	margin-bottom: 3rem;
+		width: 100%;
+	height: 100%;
 }
 
 .header h1 {
@@ -1854,11 +1864,14 @@ input[type='checkbox'] {
 /**********************/
 .footer {
 	padding-top: 5rem;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: #113448;
 }
 
 .footer .text-container {
 	margin-bottom: 2.25rem;
+	all
 }
 
 .footer h4 {
@@ -2126,7 +2139,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 13rem;
+		padding-top: 3rem;
 		padding-bottom: 7.5rem;
 	}
 
@@ -2317,7 +2330,6 @@ a:hover.back-to-top {
 	}
 
 	.header .text-container {
-		margin-top: 6.5rem;
 	}
 	/* end of header */
 
@@ -2659,7 +2671,9 @@ a:hover.back-to-top {
 
 	/* Footer */
 	.footer .text-container.about {
+
 		margin-right: 5rem;
+		margin-left: 5rem;
 	}
 	/* end of footer */
 
