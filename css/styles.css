@@ -928,6 +928,10 @@ input[type='checkbox'] {
 	height: 100%;
 }
 
+.cert-text{
+	text-align: center;;
+}
+
 .header .header-content {
 	padding-top: 8rem;
 	padding-bottom: 2.125rem;
