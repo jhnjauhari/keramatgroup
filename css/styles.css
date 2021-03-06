@@ -89,6 +89,16 @@ body, p {
 	padding-bottom: 2rem;
 }
 
+.footerlogo {
+	display: block;	
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1rem;
+	position: : absolute;
+	width: 70%;
+
+}
+
 h1 {
 	color: #484a46;
 	font: 700 2.5rem/3rem "Montserrat", sans-serif;
