@@ -929,7 +929,8 @@ input[type='checkbox'] {
 }
 
 .cert-text{
-	text-align: center;;
+	padding-top: 0.3rem;
+	text-align: center;
 }
 
 .header .header-content {
