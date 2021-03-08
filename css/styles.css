@@ -929,12 +929,12 @@ input[type='checkbox'] {
 }
 
 .cert-text{
-	padding-top: 1rem;
+	padding-top: 0.3rem;
 	text-align: center;
 }
 
 .header .header-content {
-	padding-top: 1rem;
+	padding-top: 8rem;
 	padding-bottom: 2.125rem;
 	text-align: center;
 	max-height: 70px;
