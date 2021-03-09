@@ -88,7 +88,7 @@ body, p {
 .headerlogo {
 	padding-bottom: 1rem;
         border-radius: 50%;
-        animation: animate 2s linear infinite;
+        animation: animate 3s linear infinite;
     }
 @keyframes animate {
     0%{
@@ -814,8 +814,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 7.0625rem;
-	height: 2rem;
+    width: 12.0625rem;
 	-webkit-backface-visibility: hidden;
 }
 
