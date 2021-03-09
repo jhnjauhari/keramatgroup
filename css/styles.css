@@ -86,11 +86,9 @@ body, p {
 }
 
 .headerlogo {
-	width: 200px;
-        height: 200px;
+	padding-bottom: 1rem;
         border-radius: 50%;
         animation: animate 2s linear infinite;
-        perspective: 800px;
     }
 @keyframes animate {
     0%{
