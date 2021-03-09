@@ -100,10 +100,8 @@ body, p {
 }
 
 .footerlogo {
-	display: block;	
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 1rem;
 	position: : absolute;
 	width: 70%;
 
@@ -1917,7 +1915,7 @@ input[type='checkbox'] {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
 	background-color: #113448;
-	text-align: center;
+	text-align: right;
 }
 
 .copyright p,
