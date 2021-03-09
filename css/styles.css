@@ -699,8 +699,7 @@ input[type='checkbox'] {
 }
 
 .navbar-solid .navbar-brand.logo-image img {
-    width: 7.0625rem;
-	height: 2rem;
+    width: 12.0625rem;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -1964,8 +1963,8 @@ a:hover.back-to-top {
 /*     20. Extra Pages     */
 /***************************/
 .ex-header {
-	padding-top: 8rem;
-	padding-bottom: 5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	background-color: #153e52;
 	text-align: center;
 }
@@ -1990,7 +1989,7 @@ a:hover.back-to-top {
 }
 
 .ex-basic-2 {
-	padding-top: 4.75rem;
+	padding-top: 11.75rem;
 	padding-bottom: 4rem;
 }
 
