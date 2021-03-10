@@ -121,37 +121,52 @@
                         </ul>
                        
                     </div> <!-- end of text-container -->
-                
+
                 </div> <!-- end of col -->
                <div class="col-lg-6">
                 <div class="contactBlock">
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted;true;" action="https://docs.google.com/forms/d/e/1FAIpQLSemCAo0FEuQbHfKQS6QYT_t1UxWf4xtOVM9mtric_Lq1gpHbw/formResponse?">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <input type="text" class="form-control-input" id="entry.1282192624" name="entry.1282192624" required>
+                            <label class="label-control" for="entry.1282192624">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                            <input type="text" class="form-control-input" id="entry.2083362808" name="entry.2083362808" required>
+                            <label class="label-control" for="entry.2083362808">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
+                            <textarea type="text" class="form-control-textarea" id="entry.965588607" name="entry.965588607" required></textarea>
+                            <label class="label-control" for="entry.965588607">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Keramat Engineering's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Keramat Engineering's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="">Terms Conditions</a> 
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                            <button type="submit" class="form-control-submit-button" value="submit">SUBMIT MESSAGE</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                     </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+
+                    <script type="text/javascript">
+                        $('#gform').on('submit', function(e){
+                            $('#gform *').fadeOut(2000);
+                            $('#gform *').prepend('Your Submission Has Been Submitted. Thank You');
+                        });
+                    </script>
                     <!-- end of contact form -->
 </div>
                 </div> <!-- end of col -->
