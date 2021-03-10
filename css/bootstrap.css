@@ -1016,6 +1016,7 @@ pre code {
     max-width: 8.333333%;
   }
   .col-md-2 {
+    padding-top: 7rem;
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
