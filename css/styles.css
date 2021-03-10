@@ -1495,7 +1495,6 @@ input[type='checkbox'] {
 .filter {
 	padding-top: 10.5rem;
 	padding-bottom: 7rem;
-	height: 100%;
 }
 
 .filter .section-title {
@@ -2225,6 +2224,8 @@ a:hover.back-to-top {
 	/* Projects */
 	.filter .element-item { 
 		width: 25%; 
+		border: 5px solid #fff;
+		padding: 2px;
 	}
 	
 	.filter .element-item .element-item-overlay { 
