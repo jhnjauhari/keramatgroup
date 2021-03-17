@@ -364,7 +364,7 @@ select::-ms-expand {
 .form-control-textarea {
 	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
 	width: 100%;
-	height: 18rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 21rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
 	padding-top: 1.25rem;
 	padding-left: 1.3125rem;
 	border: 1px solid #dadada;
@@ -2260,6 +2260,7 @@ a:hover.back-to-top {
 
 	.form-2 .list-unstyled .address {
 		display: block;
+		position: bottom;
 	}
 	/* end of contact */
 
